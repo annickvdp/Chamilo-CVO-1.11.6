@@ -5335,7 +5335,7 @@ class Exercise
      */
     function send_notification_for_open_questions($question_list_answers, $origin, $exe_id)
     {
-        if (api_get_course_setting('email_alert_manager_on_new_quiz') != 1 ) {
+        if (api_get_course_setting('email_alert_manager_on_new_quiz') != 2 ) {
             return null;
         }
         // Email configuration settings
@@ -5431,7 +5431,7 @@ class Exercise
 
     function send_notification_for_oral_questions($question_list_answers, $origin, $exe_id)
     {
-        if (api_get_course_setting('email_alert_manager_on_new_quiz') != 1 ) {
+        if (api_get_course_setting('email_alert_manager_on_new_quiz') != 2 ) {
             return null;
         }
         // Email configuration settings

@@ -642,8 +642,9 @@ $DescriptionDeleteCourse = "Klik op deze link om alle sporen van de cursus op de
 $DescriptionCopyCourse = "Chamilo biedt nu ook de mogelijkheid om een bestaande cursus geheel of gedeeltelijk te kopiëren naar een andere cursus, die aanvankelijk leeg mag zijn.<br><br>De enige voorwaarde voor deze functie is dat u beschikt over een cursus met een aantal documenten, aankondigingen, forums en een tweede cursus die niet dezelfde elementen als de eerste bevat !";
 $DescriptionRecycleCourse = "Deze functie verwijdert uit de cursus de geselecteerde onderdelen, of alle onderdelen. Documenten, forums, links... worden verwijderd. Deze procedure kan uitgevoerd worden aan het einde van de opleiding, of na afloop van het academiejaar. Opgelet: alvorens deze \"recycling\" uit te voeren, kunt u best een volledige backup nemen van uw cursus !";
 $QuizEmailAlert = "Waarschuwing via email bij nieuwe quiz verzonden";
-$QuizEmailAlertActivate = "Activeer waarschuwing via email wanneer een gebruiker een nieuw antwoord instuurt op een quiz";
-$QuizEmailAlertDeactivate = "Desactiveer waarschuwing via email wanneer een gebruiker een nieuw antwoord instuurt op een quiz";
+$QuizEmailAlertActivate = "Breng de beheerder op de hoogte wanneer een gebruiker een oefening maakt";
+$QuizEmailAlertDeactivate = "Breng de beheerder NIET op de hoogte wanneer een gebruiker een oefening maakt";
+$QuizEmailOpenQuestions = "Breng de beheerder ENKEL op de hoogte wanneer een gebruiker een oefeningen met een OPEN VRAAG maakt";
 $AllowUserImageForum = "Foto gebruiker in forum";
 $AllowUserImageForumActivate = "Foto gebruiker in forum weergeven";
 $AllowUserImageForumDeactivate = "Foto gebruiker in forum verbergen";
