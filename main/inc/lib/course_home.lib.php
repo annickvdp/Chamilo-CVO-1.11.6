@@ -1268,7 +1268,7 @@ class CourseHome
                     $html .= ' id="here"';
                 }
                 $html .= ' target="_top" title="'.$navigation_item['name'].'">';
-                $html .= Display::return_icon(substr($navigation_item['image'],0,-3)."png", $navigation_item['name'], null, ICON_SIZE_MEDIUM);
+                $html .= Display::return_icon(substr($navigation_item['image'],0,-3)."png", $navigation_item['name'], null, ICON_SIZE_SMALL);
                 //$html .= '<img src="'.api_get_path(WEB_IMG_PATH).$navigation_item['image'].'" alt="'.$navigation_item['name'].'"/>';
                 $html .= '</a> ';
                 if ($orientation == SHORTCUTS_VERTICAL) {
