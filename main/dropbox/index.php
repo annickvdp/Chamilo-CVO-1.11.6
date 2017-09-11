@@ -366,23 +366,10 @@ if ($action != 'add') {
 					$_SESSION['_seen'][$_course['id']][TOOL_DROPBOX] = array();
 				}
 
-				// New icon
 				$new_icon = '';
-                if (isset($_SESSION['_seen'])) {
-                    if ($dropbox_file->last_upload_date > $last_access &&
-                        !in_array(
-                            $dropbox_file->id,
-                            $_SESSION['_seen'][$_course['id']][TOOL_DROPBOX]
-                        )
-                    ) {
-                        $new_icon = '&nbsp;'.Display::return_icon(
-                                'new_dropbox_message.png',
-                                get_lang('New'),
-                                '',
-                                ICON_SIZE_SMALL
-                            );
-                    }
-                }
+				if ($dropbox_file->last_upload_date > $last_access AND !in_array($dropbox_file->id, $_SESSION['_seen'][$_course['id']][TOOL_DROPBOX])) {
+					$new_icon = '&nbsp;'.Display::return_icon('new_dropbox_message.png', get_lang('New'),'',ICON_SIZE_SMALL);
+				}
 
 				$link_open = '<a href="'.api_get_path(WEB_CODE_PATH).'dropbox/dropbox_download.php?'.api_get_cidreq().'&id='.$dropbox_file->id.'">';
 				$dropbox_file_data[] = $link_open.DocumentManager::build_document_icon_tag('file', $dropbox_file->title).'</a>';
